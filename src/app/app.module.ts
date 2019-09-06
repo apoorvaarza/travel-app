@@ -1,7 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouteReuseStrategy } from '@angular/router';
-
+import { FormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
 import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
@@ -18,7 +19,8 @@ import { PostDetailsModule } from './components/PostDetails/PostDetails.module';
 @NgModule({
   declarations: [AppComponent],
     entryComponents: [],
-    imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, SideNavPageModule, PostsModule, HomePageModule, PostDetailsModule],
+    imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule,
+        SideNavPageModule, PostsModule, HomePageModule, PostDetailsModule, FormsModule, CommonModule],
     exports: [SideNavPageModule],
   providers: [
     StatusBar,

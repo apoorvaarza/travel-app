@@ -1,5 +1,5 @@
 .title-container {
-    background-color: black;
+    background-color: #555555;
     color: white;
     height: 100px;
     text-align: center;
@@ -16,13 +16,40 @@
     width: 10%;
     float: right;
     color: #0e7886;
+    padding-top: 35px;
+}
+
+.logo-container {
+    position: relative;
+    display: table;
+    float: none;
+    margin: 0 auto;
+}
+
+.close-icon{
+    float: right;
 }
 
 .hamburger-menu {
+    margin-top: -100px;
     width: 300px;
-    height: 500px;
+    height: 100%;
     background-color: black;
+    margin-left: -300px;
+    z-index: 9000;
     /*position: absolute;*/
+}
+
+.logo {
+    height: 69.4px;
+    width: 58px;
+}
+.logo-caption {
+    text-align: left;
+    font-size: 1rem;
+    font-family: "Open Sans", sans-serif;
+    color: #0e7886;;
+    margin: 0;
 }
 
 .right-nav-container {
@@ -45,6 +72,33 @@
 .app-text {
     font-size: 20px;
     text-align: center;
-    margin: 300px 100px 100px 100px;
+    margin: 0px 100px 100px 100px;
     color: #0e7886;
+    position: relative;
+}
+
+.branding-hamburger-menu {
+    border-bottom: 1px solid #2a9dd6;
+    border-top: 1px solid #2a9dd6;
+    text-align: center;
+    display: block;
+    padding: 0;
+    overflow: hidden;
+    height: 73px;
+    line-height: 71px;
+    color: #15bdb1;
+    font-size: 28px;
+}
+
+.hamburger-menu-items {
+    text-align:center;
+    height: 73px;
+    line-height: 71px;
+    color: #15bdb1;
+    padding: 0;
+    overflow: hidden;
+}
+
+.hamburger-menu-items:hover {
+    background-color: white;
 }
