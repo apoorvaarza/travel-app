@@ -1,4 +1,4 @@
-﻿<div class="posts">
+﻿<div *ngIf="!isLoading" class="posts">
     <div class="post-list-container">
         <div *ngFor="let post of postList" class="post-card">
             <img [src]="post._embedded['wp:featuredmedia'][0].source_url" />
@@ -13,37 +13,5 @@
         </div>
     </div>
     <app-side-nav></app-side-nav>
-
-    <!--<div class="right-nav-container">
-        Search for: <ion-searchbar showCancelButton="focus"></ion-searchbar>
-        <ion-button expand="full">Search</ion-button>
-        <div>
-            Recent Posts
-            <ul>
-                <li *ngFor="let post of postList | slice:0:5">{{post.title.rendered}}</li>
-            </ul>
-        </div>
-        <div>
-            Recent Comments
-            <ul>
-                <li *ngFor="let data of commentsArray |slice:0:5">
-                    {{data.author_name}} on {{data.title}}
-                </li>
-            </ul>
-        </div>
-        <div>
-            Archives
-            <ul>
-                <li *ngFor="let monthAndYear of archivesArray">
-                    {{monthAndYear}}
-                </li>
-            </ul>
-        </div>
-        <div>
-            Categories
-            <ul>
-                <li *ngFor="let category of categoriesArray">{{category}}</li>
-            </ul>
-        </div>
-    </div>-->
 </div>
+<ion-progress-bar *ngIf="isLoading" class="loader" type="indeterminate"></ion-progress-bar>

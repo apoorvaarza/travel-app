@@ -16,20 +16,22 @@ export class PostsComponent implements OnInit {
     commentsArray: any[] = [];
     archivesArray: any[] = [];
     categoriesArray: any[] = [];
+    isLoading = false;
 
     constructor(private postsService: PostsService, private router: Router) {
     }
     ngOnInit() {
-        if (this.router.getCurrentNavigation().extras.state && this.router.getCurrentNavigation().extras.state.data) {
-            console.log(this.router.getCurrentNavigation().extras.state.data);
-        } else {
+        this.isLoading = true
             this.getPosts();
-        }
+        
     }
 
     getPosts() {
         this.postsService.getPosts().subscribe((blogList: any[]) => {
             this.postList = blogList;
+            setTimeout(() => {
+                this.isLoading = false;
+            }, 50000); 
         });
     }
 
