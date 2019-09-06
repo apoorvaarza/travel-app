@@ -1,0 +1,18 @@
+<ion-app>
+    <ion-header>
+        <ion-toolbar>
+            <ion-title class="title-container">
+                <ion-icon name="menu" class="hamburger-icon" (click)="navigateToPosts()"></ion-icon>
+                <span class="title">OMO TRAVELS</span>
+            </ion-title>
+        </ion-toolbar>
+    </ion-header>
+    <div *ngIf="showHamburgerMenu" id="hamburgerMenu" class="hamburger-menu"></div>
+    <ion-router-outlet>
+        <div class="app-text" *ngIf="showWelcomeText">
+            <p>Only those who risk going too far can possibly find out how far they can go. Travel as much as you can, as far as you can, as long as you can. Life's not meant to be lived in one place.</p>
+            <p>Fancy clothes and Diamond rings?</p>
+            <p>No honey! Passport, tickets and a backpack.</p>
+        </div>
+    </ion-router-outlet>
+</ion-app>

@@ -1,0 +1,37 @@
+﻿.right-nav-container {
+    width: 100%;
+    margin-top: 30px;
+}
+.right-nav-group-title {
+    font-weight: 700;
+    font-size: 1.64286rem;
+    color: #444444;
+    margin: 25px 0 0 0;
+}
+.right-nav-group {
+    font-size: 14px;
+    margin-top: 8px;
+    list-style: none;
+    padding: 0;
+}
+.right-nav-group-item{
+    padding: 7px 0;
+}
+.search-text {
+    color: rgb(85,85,85);
+    font-size: 14px;
+    vertical-align: middle;
+}
+.serach-bar {
+    width:75%;
+    float: right;
+}
+
+.search-container{
+    padding-bottom: 15px;
+}
+
+.search-button {
+    height: 25px;
+    border: 1px solid rgb(85,85,85);
+}

@@ -1,0 +1,15 @@
+﻿<div class="posts">
+    <div class="post-list-container">
+        <div class="post-card">
+            <h1 class="post-title">
+                {{post.title.rendered}}
+            </h1>
+            <div>Posted on {{post.formattedDate}} by {{post._embedded.author[0].name}}</div>
+            <div class="post-content" [innerHTML]="post.content.rendered">
+            </div>
+            <div>Posted in <a (click)="showUrlInWindow(post._embedded['wp:term'][0][0].link)">{{post._embedded['wp:term'][0][0].name}}</a></div>
+        </div>
+        
+    </div>
+    <app-side-nav></app-side-nav>
+</div>

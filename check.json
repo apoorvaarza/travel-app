@@ -1,0 +1,20 @@
+﻿[ {
+    "id":3,
+        "count":10,
+        "description":"","link":"https:\/\/admin-sgdevel.ordermate.online\/clients\/omotravel\/tag\/landmark\/","name":"Landmark","slug":"landmark","taxonomy":"post_tag","meta":[],"_links":
+
+{
+    "self":[{"href":"https:\/\/admin-sgdevel.ordermate.online\/clients\/omotravel\/wp-json\/wp\/v2\/tags\/3"}],"collection":[{"href":"https:\/\/admin-sgdevel.ordermate.online\/clients\/omotravel\/wp-json\/wp\/v2\/tags"}],"about":[{"href":"https:\/\/admin-sgdevel.ordermate.online\/clients\/omotravel\/wp-json\/wp\/v2\/taxonomies\/post_tag"}],"wp:post_type":[{"href":"https:\/\/admin-sgdevel.ordermate.online\/clients\/omotravel\/wp-json\/wp\/v2\/posts?tags=3"}],"curies":[{"name":"wp","href":"https:\/\/api.w.org\/{rel}","templated":true}]
+}
+
+}
+
+, {
+    "id":8,"count":1,"description":"","link":"https:\/\/admin-sgdevel.ordermate.online\/clients\/omotravel\/tag\/u-s\/","name":"U.S.","slug":"u-s","taxonomy":"post_tag","meta":[],"_links":
+
+{
+    "self":[{"href":"https:\/\/admin-sgdevel.ordermate.online\/clients\/omotravel\/wp-json\/wp\/v2\/tags\/8"}],"collection":[{"href":"https:\/\/admin-sgdevel.ordermate.online\/clients\/omotravel\/wp-json\/wp\/v2\/tags"}],"about":[{"href":"https:\/\/admin-sgdevel.ordermate.online\/clients\/omotravel\/wp-json\/wp\/v2\/taxonomies\/post_tag"}],"wp:post_type":[{"href":"https:\/\/admin-sgdevel.ordermate.online\/clients\/omotravel\/wp-json\/wp\/v2\/posts?tags=8"}],"curies":[{"name":"wp","href":"https:\/\/api.w.org\/{rel}","templated":true}]
+}
+
+}
+]
