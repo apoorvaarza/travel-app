@@ -6,9 +6,9 @@ import { Router } from '@angular/router';
 import { PostsService } from '../../datastore/Posts.service';
 
 @Component({
-  selector: 'cmp-posts',
-  templateUrl: 'Posts.component.html',
-  styleUrls: ['Posts.scss'],
+    selector: 'cmp-posts',
+    templateUrl: 'Posts.component.html',
+    styleUrls: ['Posts.scss'],
 })
 export class PostsComponent implements OnInit {
 
@@ -22,16 +22,14 @@ export class PostsComponent implements OnInit {
     }
     ngOnInit() {
         this.isLoading = true
-            this.getPosts();
-        
+        this.getPosts();
+
     }
 
     getPosts() {
         this.postsService.getPosts().subscribe((blogList: any[]) => {
             this.postList = blogList;
-            setTimeout(() => {
-                this.isLoading = false;
-            }, 50000); 
+            this.isLoading = false;
         });
     }
 
